@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		8B5A93152001E81C00E49C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A93142001E81C00E49C22 /* AppDelegate.swift */; };
 		8B5A93172001E81C00E49C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A93162001E81C00E49C22 /* ViewController.swift */; };
-		8B5A931A2001E81C00E49C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5A93182001E81C00E49C22 /* Main.storyboard */; };
 		8B5A931C2001E81C00E49C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5A931B2001E81C00E49C22 /* Assets.xcassets */; };
 		8B5A931F2001E81C00E49C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5A931D2001E81C00E49C22 /* LaunchScreen.storyboard */; };
+		8B5A93292001E93700E49C22 /* UINavigationBar+Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A93272001E93700E49C22 /* UINavigationBar+Alpha.swift */; };
+		8B5A932A2001E93700E49C22 /* UIScrollView+ScalableCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A93282001E93700E49C22 /* UIScrollView+ScalableCover.swift */; };
+		8B5A932C2001EA7100E49C22 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5A932B2001EA7100E49C22 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B5A93112001E81C00E49C22 /* Stretchy Header.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stretchy Header.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5A93142001E81C00E49C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B5A93162001E81C00E49C22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B5A93192001E81C00E49C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B5A931B2001E81C00E49C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B5A931E2001E81C00E49C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B5A93202001E81C00E49C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B5A93272001E93700E49C22 /* UINavigationBar+Alpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Alpha.swift"; sourceTree = "<group>"; };
+		8B5A93282001E93700E49C22 /* UIScrollView+ScalableCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ScalableCover.swift"; sourceTree = "<group>"; };
+		8B5A932B2001EA7100E49C22 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,22 @@
 		8B5A93132001E81C00E49C22 /* Stretchy Header */ = {
 			isa = PBXGroup;
 			children = (
+				8B5A93262001E93700E49C22 /* Stretchy Header */,
 				8B5A93142001E81C00E49C22 /* AppDelegate.swift */,
 				8B5A93162001E81C00E49C22 /* ViewController.swift */,
-				8B5A93182001E81C00E49C22 /* Main.storyboard */,
+				8B5A932B2001EA7100E49C22 /* DetailViewController.swift */,
 				8B5A931B2001E81C00E49C22 /* Assets.xcassets */,
 				8B5A931D2001E81C00E49C22 /* LaunchScreen.storyboard */,
 				8B5A93202001E81C00E49C22 /* Info.plist */,
+			);
+			path = "Stretchy Header";
+			sourceTree = "<group>";
+		};
+		8B5A93262001E93700E49C22 /* Stretchy Header */ = {
+			isa = PBXGroup;
+			children = (
+				8B5A93272001E93700E49C22 /* UINavigationBar+Alpha.swift */,
+				8B5A93282001E93700E49C22 /* UIScrollView+ScalableCover.swift */,
 			);
 			path = "Stretchy Header";
 			sourceTree = "<group>";
@@ -125,7 +139,6 @@
 			files = (
 				8B5A931F2001E81C00E49C22 /* LaunchScreen.storyboard in Resources */,
 				8B5A931C2001E81C00E49C22 /* Assets.xcassets in Resources */,
-				8B5A931A2001E81C00E49C22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5A932A2001E93700E49C22 /* UIScrollView+ScalableCover.swift in Sources */,
+				8B5A93292001E93700E49C22 /* UINavigationBar+Alpha.swift in Sources */,
+				8B5A932C2001EA7100E49C22 /* DetailViewController.swift in Sources */,
 				8B5A93172001E81C00E49C22 /* ViewController.swift in Sources */,
 				8B5A93152001E81C00E49C22 /* AppDelegate.swift in Sources */,
 			);
@@ -144,14 +160,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8B5A93182001E81C00E49C22 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B5A93192001E81C00E49C22 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B5A931D2001E81C00E49C22 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
